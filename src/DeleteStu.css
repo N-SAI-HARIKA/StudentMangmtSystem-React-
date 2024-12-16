@@ -1,0 +1,81 @@
+.delete-student {
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    font-family: Arial, sans-serif;
+  }
+  
+  .header {
+    text-align: center;
+    font-size: 24px;
+    color: #ff0000b6;
+    margin-bottom: 20px;
+  }
+  
+  .student-details {
+    margin-bottom: 20px;
+    padding: 10px;
+    background-color: #f9f9f9;
+    border-radius: 6px;
+  }
+  
+  .student-details p {
+    margin: 8px 0;
+    font-size: 16px;
+  }
+  
+  .actions {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .btn {
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .btn-danger {
+    background-color: #ff0059;
+    color: white;
+  }
+  
+  .btn-danger:hover {
+    background-color: #cc0048;
+  }
+  
+  .btn-secondary {
+    background-color: #ddd;
+    color: black;
+  }
+  
+  .btn-secondary:hover {
+    background-color: #bbb;
+  }
+  
+  .loading {
+    text-align: center;
+    font-size: 20px;
+    color: #007bff;
+  }
+  
+  .error, .not-found {
+    text-align: center;
+    font-size: 18px;
+    color: #e74c3c;
+  }
+  
+  .error {
+    margin-top: 20px;
+  }
+  
+  .not-found {
+    margin-top: 20px;
+    font-size: 18px;
+  }
+  

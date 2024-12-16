@@ -1,0 +1,33 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+  background-color: rgba(250, 235, 215, 0.834);
+}
+
+.card {
+  padding: 2em;
+}
+
+.btn {
+  margin-right: 5px;
+}
+
+
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.search-container {
+  display: flex;
+  align-items: center;
+}
+
+input.form-control {
+  width: 300px;
+}
+
