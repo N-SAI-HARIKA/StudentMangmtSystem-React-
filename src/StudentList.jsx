@@ -7,7 +7,7 @@ const StudentList = () => {
     const [searchTerm, setSearchTerm] = useState(""); // state for the search term
 
     useEffect(() => {
-        fetch("/db.json/students")
+        fetch("/db.json")
             .then((response) => {
                 if (!response.ok) {
                     throw new Error(`HTTP error! status: ${response.status}`);
