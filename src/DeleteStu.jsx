@@ -11,22 +11,22 @@ const DeleteStu = () => {
 
     useEffect(() => {
         setLoading(true);
-        fetch(`http://localhost:3001/students/${id}`)
-            .then((response) => {
-                if (!response.ok) {
-                    throw new Error(`Failed to fetch student details: ${response.statusText}`);
-                }
-                return response.json();
-            })
-            .then((data) => {
-                setStudent(data);
-                setLoading(false);
-            })
-            .catch((err) => {
-                setLoading(false);
-                setError(`Error fetching student details: ${err.message}`);
-            });
-    }, [id]);
+        fetch('/data.json') 
+        .then((response) => {
+            if (!response.ok) {
+                throw new Error(`Failed to fetch data: ${response.statusText}`);
+            }
+            return response.json();
+        })
+        .then((data) => {
+            setStudent(data.find((student) => student.id === parseInt(id)));
+            setLoading(false);
+        })
+        .catch((err) => {
+            setLoading(false);
+            setError(`Error fetching data: ${err.message}`);
+        });
+}, [id]);
 
     const handleDelete = () => {
         const confirmDelete = window.confirm("Are you sure you want to delete this student?");
